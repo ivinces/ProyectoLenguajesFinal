@@ -12,48 +12,53 @@ def busquedatags(url):
         valores=[["Tema", "Votos", "Respuestas", "Vistas"]]
         myData = []
 
-
-        entrada2= html.find_all('div', {'id': 'tabs'})
+        entrada2= html.find_all('div', {'id': 'siteContent'}) #webomwtrics
         for i, entrada1 in enumerate(entrada2):
-            tag=entrada1.find('a', {'class': 'youarehere is-selected '})
+            tag=entrada1.find('h1', {'id': 'page-title'})
             if tag!=None:
-                tagtx=tag.getText()
+                tagtx=tag.getText()+"-webometrics"
             else:
-                tagtx=""
+                tagtx="webometrics"
 
-
-        entrada3=html.find_all('div', {'id': 'explore-tags'})
+        entrada3=html.find_all('div', {'id': 'content'})  #shangai
         for i, entrada4 in enumerate(entrada3):
-            tag=entrada4.find('a', {'class': 'post-tag selected no-tag-menu'})
+            tag=entrada4.find('div', {'id': 'rankingarea'})
             if tag!=None:
-                tagtx=tag.getText()
+                tagtx=tag.getText()+"-shangai"
             else:
-                tagtx=""
+                tagtx="shangai"
 
-        entradas = html.find_all('div', {'class': 'question-summary narrow'})
+
+        entrada6=html.find_all('div', {'class': 'pane-content'})  #qs
+        for i, entrada7 in (entrada6):
+            tag=entrada7.find('div', {'class': 'image-text'})
+            if tag!=None:
+                tagtx=tag.getText()+"-QS"
+            else:
+                tagtx="QS"
+
+        entradas = html.find_all('div', {'id': 'content'}) #principal universidad
         for i, entrada in enumerate(entradas):
 
-            tema= entrada.find('a', {'class': 'question-hyperlink'})
-            if tema!=None:
-                tematx=tema.getText()
+            universidad= entrada.find('a', {'target': '_blank'})
+            if universidad!=None:
+                universidadtx=universidad.getText()
             else:
-                tematx=""
+                universidadtx=""
 
-            votos = entrada.find('div', {'class': 'votes'})
-            votostx = votos.getText().replace('\n',' ')
+            myData.append(str(i)+","+universidadtx)
 
-            respuestas = entrada.find('div', {'class': 'status answered'})
-            if respuestas!=None:
-                respuestastx= respuestas.getText().replace('\n',' ')
+
+        entradas5 = html.find_all('div', {'class': 'dataTables_scrollBody'}) #principal universidad
+        for i, entrada in enumerate(entradas5):
+
+            universidad= entrada.find('td', {'class': 'uni'})
+            if universidad!=None:
+                universidadtx=universidad.getText()
             else:
-                respuestastx=" 0 respuestas"
+                universidadtx=""
 
-
-            vistas = entrada.find('div', {'class': 'views'}).getText().replace('\n',' ')
-
-
-            myData.append(tematx+"--"+votostx+"--"+respuestastx+"--"+vistas)
-
+            myData.append(str(i)+","+universidadtx)
 
     else:
         print ("Status Code %d" % status_code)
@@ -61,17 +66,13 @@ def busquedatags(url):
 
     ar=tagtx.strip(' ')
 
-    myFile = open(ar.replace('\n','').replace(' ','').replace('\r','')+'.csv', 'w')
+    myFile = open("../Procesamiento/Scraping/"+ar+".csv", 'w')
     for linea in myData:
         myFile.write(linea+"\n")
 
 
 
-URLtags =["https://es.stackoverflow.com/?tab=featured","https://es.stackoverflow.com/?tab=active","https://es.stackoverflow.com/?tab=hot",
-      "https://es.stackoverflow.com/?tab=week","https://es.stackoverflow.com/?tab=month","https://es.stackoverflow.com/?tags=php",
-      "https://es.stackoverflow.com/?tags=javascript","https://es.stackoverflow.com/?tags=java","https://es.stackoverflow.com/?tags=android",
-      "https://es.stackoverflow.com/?tags=html","https://es.stackoverflow.com/?tags=c%23","https://es.stackoverflow.com/?tags=jquery",
-      "https://es.stackoverflow.com/?tags=python","https://es.stackoverflow.com/?tags=android-studio"]
+URLtags =["http://www.webometrics.info/es/world"]
 
 for i in URLtags:
     busquedatags(i)
