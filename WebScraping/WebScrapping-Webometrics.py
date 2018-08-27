@@ -2,70 +2,51 @@
 from bs4 import BeautifulSoup
 import requests
 import csv
+import os
 
-def busquedatags(url):
+def busquedatags(url,carpeta):
     req = requests.get(url)
 
     status_code = req.status_code
     if status_code == 200:
 
         html = BeautifulSoup(req.text, "html.parser")
-        valores=[["Tema", "Votos", "Respuestas", "Vistas"]]
         myData = []
 
-        entrada2= html.find_all('div', {'id': 'siteContent'}) #webomwtrics
-        for i, entrada1 in enumerate(entrada2):
-            tag=entrada1.find('h1', {'id': 'page-title'})
-            if tag!=None:
-                tagtx=tag.getText().replace("/","-")
-            else:
-                tagtx=""
+        tagtx=html.find('h1', {'id': 'page-title'}).getText().replace("/","-")
 
         cont=1
-        entradas = html.find_all('tr', {'class': 'odd'}) #principal universidad
-        for i,entrada in enumerate(entradas):
-
+        tablas = html.find_all('tr', {'class': 'odd'}) #principal universidad
+        for i,entrada in enumerate(tablas):
             universidad= entrada.find('a', {'target': '_blank'})
             if universidad!=None:
                 universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
-
-
             else:
                 universidadtx=""
-
             myData.append(str(cont)+","+universidadtx)
             cont+=2
 
-
-
         cont2=2
-        entradas2 = html.find_all('tr', {'class': 'even'}) #principal universidad
-        for i,entrada2 in enumerate(entradas2):
-
+        tablas2 = html.find_all('tr', {'class': 'even'}) #principal universidad
+        for i,entrada2 in enumerate(tablas2):
             universidad= entrada2.find('a', {'target': '_blank'})
             if universidad!=None:
                 universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
-
-
             else:
                 universidadtx=""
-
             myData.append(str(cont2)+","+universidadtx)
             cont2+=2
 
     else:
         print ("Status Code %d" % status_code)
 
-
-    ar=tagtx.strip(' ')
-
-    myFile = open("../Procesamiento/Scraping/Webometrics/"+ar+".csv", 'w')
+    archivo=tagtx.strip(' ')
+    myFile = open("../Procesamiento/Scraping/Webometrics/"+str(carpeta)+"/"+archivo+".csv", 'w')
     for linea in myData:
         myFile.write(linea+"\n")
 
-
-
-URLtags =["http://www.webometrics.info/es/world","http://www.webometrics.info/es/Americas","http://www.webometrics.info/es/Americas/North_America"
+URLMundial=["http://www.webometrics.info/es/world"]
+URLPaises =["http://www.webometrics.info/es/Americas","http://www.webometrics.info/es/Americas/North_America"
           ,"http://www.webometrics.info/es/Americas/USA","http://www.webometrics.info/es/Americas/Latin_America","http://www.webometrics.info/es/Americas/Caribbean",
           "http://www.webometrics.info/es/Asia_Pacifico","http://www.webometrics.info/es/Asia_Pacifico/Asia_incl_ME","http://www.webometrics.info/es/Asia_Pacifico/Middle_East"
           ,"http://www.webometrics.info/es/Asia_Pacifico/South%20Asia","http://www.webometrics.info/es/Asia_Pacifico/South%20East%20Asia","http://www.webometrics.info/es/Asia_Pacifico/Oceania",
@@ -78,8 +59,22 @@ URLtags =["http://www.webometrics.info/es/world","http://www.webometrics.info/es
           "http://www.webometrics.info/es/Asia_es/Jap%C3%B3n","http://www.webometrics.info/es/Asia_es/Tailandia","http://www.webometrics.info/es/aw_es/Emiratos%20%C3%81rabes%20Unidos",
           "http://www.webometrics.info/es/aw_es/Egipto","http://www.webometrics.info/es/Oceania_es/Australia","http://www.webometrics.info/es/Oceania_es/Nueva%20Zelanda"]
 
-for i in URLtags:
-    busquedatags(i)
+if(os.path.exists("../Procesamiento/Scraping/Webometrics/Mundial")):
+    for i in URLMundial:
+        busquedatags(i,"Mundial")
+else:
+    os.mkdir("../Procesamiento/Scraping/Webometrics/Mundial")
+    for i in URLMundial:
+        busquedatags(i,"Mundial")
+
+if(os.path.exists("../Procesamiento/Scraping/Webometrics/Paises")):
+    for i in URLPaises:
+        busquedatags(i,"Paises")
+else:
+    os.mkdir("../Procesamiento/Scraping/Webometrics/Paises")
+    for i in URLPaises:
+        busquedatags(i,"Paises")
+
 
 
 
