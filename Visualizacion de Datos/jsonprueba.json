@@ -1,0 +1,10 @@
+{"entradas":
+	[{"respuestas":2,"votos":1,"pregunta":"Evitar self=this mediante el uso de funciones flecha ES6","vistas":25},
+	{"respuestas":2,"votos":1,"pregunta":"Agrupar resultados en MYSQL aplicando inner join","vistas":28},
+	{"respuestas":2,"votos":1,"pregunta":"¿Existe alguna forma de adaptar una sentencia SQL cuando llega un campo nulo?","vistas":70},
+	{"respuestas":2,"votos":2,"pregunta":"Fatal error: Call to undefined function sqlsrv_connect()","vistas":13000},
+	{"respuestas":1,"votos":1,"pregunta":"No puedo conectar mi formulario html a la base de datos","vistas":43},
+	{"respuestas":1,"votos":3,"pregunta":"Seleccionar sólo las vistas del usuario de una base de datos Oracle","vistas":694},
+	{"respuestas":1,"votos":1,"pregunta":"como llamar a funciones de JS antes que carge la pagina","vistas":28},
+	{"respuestas":1,"votos":0,"pregunta":"¿como obtener datos del lado del cliente con sockets ?","vistas":11},
+	{"respuestas":1,"votos":1,"pregunta":"Activar conecciones TCP/IP postgresql","vistas":8}]}
