@@ -16,13 +16,12 @@ def busquedatags(url,tagtx,carpeta):#shangai
         cont=1
         entradas = html.find_all('tr', {'class': 'bgfd'}) #principal universidad
         for i,entrada in enumerate(entradas):
+
             universidad= entrada.find('a', {'target': '_blank'})
             if universidad!=None:
                 universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
-            else:
-                universidadtx=""
-            myData.append(str(cont)+","+universidadtx)
-            cont+=2
+                myData.append(str(cont)+","+universidadtx)
+                cont+=2
             if(cont>100):
                 break
 
@@ -32,10 +31,11 @@ def busquedatags(url,tagtx,carpeta):#shangai
             universidad= entrada2.find('a', {'target': '_blank'})
             if universidad!=None:
                 universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
-            else:
-                universidadtx=""
-            myData.append(str(cont2)+","+universidadtx)
-            cont2+=2
+                myData.append(str(cont2)+","+universidadtx)
+                cont2+=2
+            #else:
+            #   universidadtx=""
+
             if(cont2>100):
                 break
 
@@ -44,7 +44,7 @@ def busquedatags(url,tagtx,carpeta):#shangai
 
 
     archivo=tagtx.strip(' ')
-    myFile = open("../Procesamiento/Scraping/Shangai/"+carpeta+"/"+archivo+".csv", 'w')
+    myFile = open("../Procesamiento/procesamiento/Scraping/Shangai/"+carpeta+"/"+archivo+".csv", 'w')
     for linea in myData:
         myFile.write(linea+"\n")
 
@@ -62,39 +62,45 @@ URLAnios=["http://www.shanghairanking.com/es/ARWU2015.html","http://www.shanghai
          "http://www.shanghairanking.com/es/ARWU2009.html","http://www.shanghairanking.com/es/ARWU2008.html",
          "http://www.shanghairanking.com/es/ARWU2007.html","http://www.shanghairanking.com/es/ARWU2006.html"]
 
-if(os.path.exists("../Procesamiento/Scraping/Shangai/Mundial")):
+if(os.path.exists("../Procesamiento/procesamiento/Scraping")==False):
+    os.mkdir("../Procesamiento/procesamiento/Scraping")
+
+if(os.path.exists("../Procesamiento/procesamiento/Scraping/Shangai")==False):
+    os.mkdir("../Procesamiento/procesamiento/Scraping/Shangai")
+
+if(os.path.exists("../Procesamiento/procesamiento/Scraping/Shangai/Mundial")):
     for i in URLMundial:
         l=i.split("-")
         tag=l[0]
         url=l[1]
         busquedatags(url,tag,"Mundial")
 else:
-    os.mkdir("../Procesamiento/Scraping/Shangai/Mundial")
+    os.mkdir("../Procesamiento/procesamiento/Scraping/Shangai/Mundial")
     for i in URLMundial:
         l=i.split("-")
         tag=l[0]
         url=l[1]
         busquedatags(url,tag,"Mundial")
 
-if(os.path.exists("../Procesamiento/Scraping/Shangai/Area")):
+if(os.path.exists("../Procesamiento/procesamiento/Scraping/Shangai/Area")):
     for i in URLArea:
         l=i.split("-")
         tag=l[0]
         url=l[1]
         busquedatags(url,tag,"Area")
 else:
-    os.mkdir("../Procesamiento/Scraping/Shangai/Area")
+    os.mkdir("../Procesamiento/procesamiento/Scraping/Shangai/Area")
     for i in URLArea:
         l=i.split("-")
         tag=l[0]
         url=l[1]
         busquedatags(url,tag,"Area")
-if(os.path.exists("../Procesamiento/Scraping/Shangai/Anios")):
+if(os.path.exists("../Procesamiento/procesamiento/Scraping/Shangai/Anios")):
     for i in URLAnios:
         anio=str(i.split("ARWU")[1].split(".html")[0])
         busquedatags(i,anio,"Anios")
 else:
-    os.mkdir("../Procesamiento/Scraping/Shangai/Anios")
+    os.mkdir("../Procesamiento/procesamiento/Scraping/Shangai/Anios")
     for i in URLAnios:
         anio=str(i.split("ARWU")[1].split(".html")[0])
         busquedatags(i,anio,"Anios")

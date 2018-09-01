@@ -21,10 +21,8 @@ def busquedatags(url,carpeta):
             universidad= entrada.find('a', {'target': '_blank'})
             if universidad!=None:
                 universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
-            else:
-                universidadtx=""
-            myData.append(str(cont)+","+universidadtx)
-            cont+=2
+                myData.append(str(cont)+","+universidadtx)
+                cont+=2
 
         cont2=2
         tablas2 = html.find_all('tr', {'class': 'even'}) #principal universidad
@@ -32,16 +30,17 @@ def busquedatags(url,carpeta):
             universidad= entrada2.find('a', {'target': '_blank'})
             if universidad!=None:
                 universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
-            else:
-                universidadtx=""
-            myData.append(str(cont2)+","+universidadtx)
-            cont2+=2
+                myData.append(str(cont2)+","+universidadtx)
+                cont2+=2
+            #else:
+             #   universidadtx=""
+
 
     else:
         print ("Status Code %d" % status_code)
 
     archivo=tagtx.strip(' ')
-    myFile = open("../Procesamiento/Scraping/Webometrics/"+str(carpeta)+"/"+archivo+".csv", 'w')
+    myFile = open("../Procesamiento/procesamiento/Scraping/Webometrics/"+str(carpeta)+"/"+archivo+".csv", 'w')
     for linea in myData:
         myFile.write(linea+"\n")
 
@@ -59,19 +58,25 @@ URLPaises =["http://www.webometrics.info/es/Americas","http://www.webometrics.in
           "http://www.webometrics.info/es/Asia_es/Jap%C3%B3n","http://www.webometrics.info/es/Asia_es/Tailandia","http://www.webometrics.info/es/aw_es/Emiratos%20%C3%81rabes%20Unidos",
           "http://www.webometrics.info/es/aw_es/Egipto","http://www.webometrics.info/es/Oceania_es/Australia","http://www.webometrics.info/es/Oceania_es/Nueva%20Zelanda"]
 
-if(os.path.exists("../Procesamiento/Scraping/Webometrics/Mundial")):
+if(os.path.exists("../Procesamiento/procesamiento/Scraping")==False):
+    os.mkdir("../Procesamiento/procesamiento/Scraping")
+
+if(os.path.exists("../Procesamiento/procesamiento/Scraping/Webometrics")==False):
+    os.mkdir("../Procesamiento/procesamiento/Scraping/Webometrics")
+
+if(os.path.exists("../Procesamiento/procesamiento/Scraping/Webometrics/Mundial")):
     for i in URLMundial:
         busquedatags(i,"Mundial")
 else:
-    os.mkdir("../Procesamiento/Scraping/Webometrics/Mundial")
+    os.mkdir("../Procesamiento/procesamiento/Scraping/Webometrics/Mundial")
     for i in URLMundial:
         busquedatags(i,"Mundial")
 
-if(os.path.exists("../Procesamiento/Scraping/Webometrics/Paises")):
+if(os.path.exists("../Procesamiento/procesamiento/Scraping/Webometrics/Paises")):
     for i in URLPaises:
         busquedatags(i,"Paises")
 else:
-    os.mkdir("../Procesamiento/Scraping/Webometrics/Paises")
+    os.mkdir("../Procesamiento/procesamiento/Scraping/Webometrics/Paises")
     for i in URLPaises:
         busquedatags(i,"Paises")
 
