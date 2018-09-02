@@ -46,7 +46,7 @@ public class Archivo {
         String cadena;
         File directorio = new File("Procesado");
         directorio.mkdir();
-        try (FileWriter fichero = new FileWriter("Procesado/"+nombreArchivo)) {
+        try (FileWriter fichero = new FileWriter("../../Visualizacion de Datos/Procesados/"+nombreArchivo)) {
             JSONArray list=new JSONArray();
             JSONObject f = new JSONObject();
             for (Universidades linea : nombreArrayList) {
@@ -77,7 +77,7 @@ public class Archivo {
         String cadena;
         File directorio = new File("Procesado");
         directorio.mkdir();
-        try (FileWriter fichero = new FileWriter("Procesado/"+nombreArchivo)) {
+        try (FileWriter fichero = new FileWriter("../../Visualizacion de Datos/Procesados/"+nombreArchivo)) {
             JSONArray list=new JSONArray();
             JSONObject f = new JSONObject();
             
