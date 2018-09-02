@@ -53,7 +53,7 @@
 		</div>
 		<div class="row rounded-top border border-dark">
 			<div class="col-2 border-right border-dark border-bottom header_table">
-				POCISION
+				POSICION
 			</div>
 			<div class="col-8 border-right border-dark border-bottom header_table">
 				UNIVERSIDAD
@@ -102,9 +102,8 @@
 		xmlhttp.onreadystatechange = function() {
 		    if (this.readyState == 4 && this.status == 200) {
 		        var myObj = JSON.parse(this.responseText);
-
+		        
 		        jQuery('#tabla_posiciones').html('');
-
 
 		        for(i = 0; i < 100; i++){
 		        	var col_id = $('<col/>',{
@@ -127,10 +126,8 @@
 		        	col_check.append(input);
 		        	$("#tabla_posiciones").append(col_id, col_universidad, col_check);
 		        	$("#container_tabla").attr('class', 'container mt-4 clase_tabla');
-
 		        }
 		    }
-		    
 		};
 		xmlhttp.open("GET", ruta, true);
 		xmlhttp.send();
@@ -139,50 +136,80 @@
 <script>
 
 	$("#comparar").click(function(){
-		var _labels = [""];
-		var _datas_respuestas = [0];
+		var _filas = ["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","Computacion","Economia","Fisica","Ingenieria","Matematicas" ,"Medicina","Quimica","Science","Sociales"];
+		var _datasets = [];
 		$('.clase_check:checked').each(
 		    function() {
 		    	var str = ($(this).val()).split("-");
-		    	_labels.push(str[1]);
-		    	_datas_respuestas.push(str[0]);
+		    	var xmlhttp = new XMLHttpRequest();
+				xmlhttp.onreadystatechange = function() {
+				    if (this.readyState == 4 && this.status == 200) {
+				        var myObj = JSON.parse(this.responseText);
+				        for(i = 0; i < 2520; i++){
+				        	var dict = {};
+				        	var variable=myObj.entradas[i].universidad;				        	
+				        	if(variable==str[1]){
+				        		console.log(variable+"<<<<<<<<<<<<<<<<<<<<<<<");
+				        		var _datas_respuestas = []
+				        		_datas_respuestas.push(myObj.entradas[i].p_2006);
+								_datas_respuestas.push(myObj.entradas[i].p_2007);
+								_datas_respuestas.push(myObj.entradas[i].p_2008);
+								_datas_respuestas.push(myObj.entradas[i].p_2009);
+								_datas_respuestas.push(myObj.entradas[i].p_2010);
+								_datas_respuestas.push(myObj.entradas[i].p_2011);
+								_datas_respuestas.push(myObj.entradas[i].p_2012);
+								_datas_respuestas.push(myObj.entradas[i].p_2013);
+								_datas_respuestas.push(myObj.entradas[i].p_2014);
+								_datas_respuestas.push(myObj.entradas[i].p_2015);
+								_datas_respuestas.push(myObj.entradas[i].p_computacion);
+								_datas_respuestas.push(myObj.entradas[i].p_economia);
+								_datas_respuestas.push(myObj.entradas[i].p_fisica);
+								_datas_respuestas.push(myObj.entradas[i].p_ing);
+								_datas_respuestas.push(myObj.entradas[i].p_mate);
+								_datas_respuestas.push(myObj.entradas[i].p_medicina);
+								_datas_respuestas.push(myObj.entradas[i].p_quimica);
+								_datas_respuestas.push(myObj.entradas[i].p_science);
+								_datas_respuestas.push(myObj.entradas[i].p_sociales);
+								dict["label"]=variable;
+								dict["backgroundColor"]="rgba("+String(Math.random()*255)+","+String(Math.random()*255)+","+String(Math.random()*255)+","+String(Math.random())+")";
+								dict["data"]=_datas_respuestas;
+								_datasets.push(dict);
+				        	}
+				        }
+				        if(_datas_respuestas.length < 3){
+							alert("Error, escoja al menos 2 universidades");
+						}
+						else{	
+							datos = {
+								labels : _filas,
+								datasets : _datasets,
+							}
+							var canvas = document.getElementById('chart').getContext('2d');
+							window.bar = new Chart(canvas, {
+									type : "bar",
+									data : datos,
+									options : {
+										elements : {
+											rectangle : {
+												borderWidth : 1,
+												borderColor : "rgb(255,0,255)",
+												borderSkipped : 'bottom'
+											}
+										},
+										responsive : true,
+										title : {
+											display : true,
+											text : "Grafico comparador de posicion de universidades"
+										}
+									}
+							});
+						}
+				    }
+				};
+				xmlhttp.open("GET", "Procesados/universidades.json", true);
+				xmlhttp.send();
 		    }
 		);
-		if(_labels.length < 3){
-			alert("Error, escoja al menos 2 universidades");
-		}
-		else{
-			var _datasets = [{
-						label : "Posicion",
-						backgroundColor : "rgba(220,220,220,0.5)",
-						data : _datas_respuestas
-					}]
-			datos = {
-				labels : _labels,
-				datasets : _datasets,
-			}
-			var canvas = document.getElementById('chart').getContext('2d');
-			window.bar = new Chart(canvas, {
-					type : "line",
-					data : datos,
-					options : {
-						elements : {
-							rectangle : {
-								borderWidth : 1,
-								borderColor : "rgb(0,255,0)",
-								borderSkipped : 'bottom'
-							}
-						},
-						responsive : true,
-						title : {
-							display : true,
-							text : "Grafico comparador de posicion de universidades"
-						}
-					}
-			});
-		}
-		
-
 	});
 	var lista_anios = ["2006.json","2007.json","2008.json","2009.json","2010.json","2011.json","2012.json","2013.json","2014.json","2015.json"]; 
 

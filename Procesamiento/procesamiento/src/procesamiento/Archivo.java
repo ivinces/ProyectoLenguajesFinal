@@ -80,7 +80,7 @@ public class Archivo {
         try (FileWriter fichero = new FileWriter("../../Visualizacion de Datos/Procesados/"+nombreArchivo)) {
             JSONArray list=new JSONArray();
             JSONObject f = new JSONObject();
-            
+            System.out.println(ht.size());
             for (String linea : Collections.list(ht.keys())) {
                 JSONObject obj = new JSONObject();
 		obj.put("universidad", linea);
