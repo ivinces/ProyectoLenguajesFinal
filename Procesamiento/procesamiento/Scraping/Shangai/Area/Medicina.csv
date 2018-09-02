@@ -1,100 +1,100 @@
-1,Universidad de Harvard
-3,Universidad de Washington
-5,Universidad de Stanford
-7,Universidad de Columbia
-9,Centro M\xc3\x83\xc2\xa9dico Suroccidental de la Universidad de Texas en Dallas
-11,Universidad de Yale
-13,Universidad de Carolina del Norte en Chapel Hill
-15,Universidad de Oxford
-17,Universidad de M\xc3\x83\xc2\xadchigan-Ann Arbor
-19,Universidad de Vanderbilt
-21,Centro del C\xc3\x83\xc2\xa1ncer M.D. Anderson de la Universidad de Texas
-23,Colegio Imperial de Ciencia, Tecnolog\xc3\x83\xc2\xada y Medicina 
-25,Universidad de Cornell
-27,Universidad de California-Berkeley
-29,Universidad del Noroeste
-31,Universidad de Leiden
-33,Universidad de Emory
-35,Universidad de Chicago
-37,Colegio Universitario de King de Londres
-39,Universidad de \xc3\x83\xc2\x81msterdam
-41,Universidad Libre de \xc3\x83\xc2\x81msterdam
-43,Centro de Ciencias de la Salud de la Universidad de Texas en Houston
-45,Universidad de Gotemburgo
-47,Universidad de Washington en St. Louis
-49,Universidad de Kioto
-51,Escuela de Medicina de Baylor
-53,Universidad Erasmus de Rotterdam
-55,Escuela de Medicina de Icahn en el Monte Sina\xc3\x83\xc2\xad
-57,Universidad de la Salud y Ciencias de Oreg\xc3\x83\xc2\xb3n
-59,Universidad de Edimburgo
-61,Universidad de Australia del Oeste
-63,Universidad de Basilea
-65,Universidad de Florida
-67,Universidad de Helsinki
-69,Universidad de M\xc3\x83\xc2\xbanich
-71,Universidad de Par\xc3\x83\xc2\xads Sur (Paris XI)
-73,Universidad del Sur de California
-75,Universidad de Utrecht
-77,Universidad Cat\xc3\x83\xc2\xb3lica de Lovaina
-79,Universidad de Monash
-81,Rutgers, Universidad Estatal New Jersey - New Brunswick
-83,Universidades en Manchester
-85,Universidad de Queensland
-87,Centro de Ciencias de la Salud de la Universidad de Texas en San Antonio
-89,Universidad de Alberta
-91,Universidad de Birmingham
-93,Universidad de Cincinnati
-95,Universidad de Copenhague
-97,Universidad de Iowa 
-99,Universidad de Mil\xc3\x83\xc2\xa1n
-2,Universidad de California, San Francisco
-4,Universidad Johns Hopkins
-6,Universidad de Cambridge 
-8,Escuela Universitaria de Londres
-10,Universidad de California, Los \xc3\x83\xc2\x81ngeles
-12,Instituto Karolinska
-14,Universidad de Pittsburgh-Campus de Pittsburgh
-16,Escuela M\xc3\x83\xc2\xa9dica de Mayo
-18,Universidad de Pennsylvania
-20,Universidad de California, San Diego
-22,Universidad de Minnesota, Twin Cities
-24,Universidad de Duke
-26,Universidad de Wisconsin - Madison 
-28,Universidad de Toronto
-30,Universidad de Boston 
-32,Universidad de Melbourne
-34,Universidad de Z\xc3\x83\xc2\xbarich
-36,Universidad de Utah
-38,Universidad de McGill
+1,Harvard University
+3,University of Washington
+5,Stanford University
+7,Columbia University
+9,The University of Texas Southwestern Medical Center at Dallas
+11,Yale University
+13,University of North Carolina at Chapel Hill
+15,University of Oxford
+17,University of Michigan-Ann Arbor
+19,Vanderbilt University
+21,The University of Texas M. D. Anderson Cancer Center
+23,The Imperial College of Science, Technology and Medicine
+25,Cornell University
+27,University of California, Berkeley
+29,Northwestern University
+31,Leiden University
+33,Emory University
+35,University of Chicago
+37,s College London"
+39,University of Amsterdam
+41,VU University Amsterdam
+43,The University of Texas Health Science Center at Houston
+45,University of Gothenburg
+47,Washington University in St. Louis
+49,Kyoto University
+51,Baylor College of Medicine
+53,Erasmus University
+55,Icahn School of Medicine at Mount Sinai
+57,Oregon Health and Science University
+59,The University of Edinburgh
+61,The University of Western Australia
+63,University of Basel
+65,University of Florida
+67,University of Helsinki
+69,University of Munich
+71,University of Paris-Sud (Paris 11)
+73,University of Southern California
+75,Utrecht University
+77,Catholic University of Louvain
+79,Monash University
+81,Rutgers, The State University of New Jersey - New Brunswick
+83,The University of Manchester
+85,The University of Queensland
+87,The University of Texas Health Science Center at San Antonio
+89,University of Alberta
+91,University of Birmingham
+93,University of Cincinnati
+95,University of Copenhagen
+97,University of Iowa
+99,University of Milan
+2,University of California, San Francisco
+4,Johns Hopkins University
+6,University of Cambridge
+8,University College London
+10,University of California, Los Angeles
+12,Karolinska Institute
+14,University of Pittsburgh, Pittsburgh Campus
+16,Mayo Medical School
+18,University of Pennsylvania
+20,University of California, San Diego
+22,University of Minnesota, Twin Cities
+24,Duke University
+26,University of Wisconsin - Madison
+28,University of Toronto
+30,Boston University
+32,The University of Melbourne
+34,University of Zurich
+36,University of Utah
+38,McGill University
 40,KU Leuven
-42,Universidad de Nottingham
-44,Universidad de Oslo
-46,Universidad de McMaster
-48,Universidad Tufts
-50,Instituto de Tecnolog\xc3\x83\xc2\xada de Massachusetts
-52,Universidad de Brown
-54,Universidad de Heidelberg
-56,Universidad de Nueva York
-58,Universidad Estatal de Ohio - Columbus
-60,Universidad de Glasgow
-62,Universidad de Barcelona
-64,Universidad de Br\xc3\x83\xc2\xadstol
-66,Universidad de Fr\xc3\x83\xc2\xa1ncfort
-68,Universidad de Maryland, Baltimore
-70,Universidad de Par\xc3\x83\xc2\xads Descartes (Par\xc3\x83\xc2\xads V)
-72,Universidad de Rochester
-74,Universidad de Upsala
-76,Universidad Occidental de la Reserva del Caso
-78,Universidad de Maastricht
-80,Queen Mary, Universidad de Londres 
-82,Universidad de Adelaida
-84,Universidad de Nueva Gales del Sur 
-86,Universidad de Sheffield
-88,Universidad de Tokio
-90,Universidad de Bern
-92,Universidad de California, Davis
-94,Universidad de Colorado en Denver
-96,Universidad de Groningen
-98,Escuela de Medicina de la Universidad de Massachusetts - Worcester
-100,Universidad de Wake Forest
+42,University of Nottingham
+44,University of Oslo
+46,McMaster University
+48,Tufts University
+50,Massachusetts Institute of Technology (MIT)
+52,Brown University
+54,Heidelberg University
+56,New York University
+58,The Ohio State University - Columbus
+60,The University of Glasgow
+62,University of Barcelona
+64,University of Bristol
+66,University of Frankfurt
+68,University of Maryland, Baltimore
+70,University of Paris Descartes (Paris 5)
+72,University of Rochester
+74,Uppsala University
+76,Case Western Reserve University
+78,Maastricht University
+80,Queen Mary University of London
+82,The University of Adelaide
+84,The University of New South Wales
+86,The University of Sheffield
+88,The University of Tokyo
+90,University of Bern
+92,University of California, Davis
+94,University of Colorado at Denver
+96,University of Groningen
+98,University of Massachusetts Medical School - Worcester
+100,Wake Forest University

@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 import os
+import unicodedata
 
 def busquedatags(url,carpeta):
     req = requests.get(url)
@@ -20,7 +21,8 @@ def busquedatags(url,carpeta):
         for i,entrada in enumerate(tablas):
             universidad= entrada.find('a', {'target': '_blank'})
             if universidad!=None:
-                universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
+                normal=str(unicodedata.normalize('NFKD',universidad.getText()).encode('ASCII','ignore')).split("'")[1]
+                universidadtx=normal
                 myData.append(str(cont)+","+universidadtx)
                 cont+=2
 
@@ -29,7 +31,8 @@ def busquedatags(url,carpeta):
         for i,entrada2 in enumerate(tablas2):
             universidad= entrada2.find('a', {'target': '_blank'})
             if universidad!=None:
-                universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
+                normal=str(unicodedata.normalize('NFKD',universidad.getText()).encode('ASCII','ignore')).split("'")[1]
+                universidadtx=normal
                 myData.append(str(cont2)+","+universidadtx)
                 cont2+=2
             #else:

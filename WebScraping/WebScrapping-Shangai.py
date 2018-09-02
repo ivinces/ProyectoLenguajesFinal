@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import requests
 import csv
 import os
+import sys
+import unicodedata
 
 def busquedatags(url,tagtx,carpeta):#shangai
     req = requests.get(url)
@@ -12,14 +14,14 @@ def busquedatags(url,tagtx,carpeta):#shangai
 
         html = BeautifulSoup(req.text, "html.parser")
         myData = []
-
         cont=1
         entradas = html.find_all('tr', {'class': 'bgfd'}) #principal universidad
         for i,entrada in enumerate(entradas):
 
             universidad= entrada.find('a', {'target': '_blank'})
             if universidad!=None:
-                universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
+                normal=str(unicodedata.normalize('NFKD',universidad.getText()).encode('ASCII','ignore')).split("'")[1]
+                universidadtx=normal
                 myData.append(str(cont)+","+universidadtx)
                 cont+=2
             if(cont>100):
@@ -30,7 +32,8 @@ def busquedatags(url,tagtx,carpeta):#shangai
         for i,entrada2 in enumerate(entradas2):
             universidad= entrada2.find('a', {'target': '_blank'})
             if universidad!=None:
-                universidadtx=str(universidad.getText().encode('utf-8')).split("'")[1]
+                normal=str(unicodedata.normalize('NFKD',universidad.getText()).encode('ASCII','ignore')).split("'")[1]
+                universidadtx=normal
                 myData.append(str(cont2)+","+universidadtx)
                 cont2+=2
             #else:
@@ -48,19 +51,19 @@ def busquedatags(url,tagtx,carpeta):#shangai
     for linea in myData:
         myFile.write(linea+"\n")
 
-URLMundial=["Mundo-http://www.shanghairanking.com/es/ARWU2015.html"]
+URLMundial=["Mundo-http://www.shanghairanking.com/ARWU2015.html"]
 
-URLArea =["Matematicas-http://www.shanghairanking.com/es/SubjectMathematics2015.html"
-        ,"Fisica-http://www.shanghairanking.com/es/SubjectPhysics2015.html","Quimica-http://www.shanghairanking.com/es/SubjectChemistry2015.html",
-          "Computacion-http://www.shanghairanking.com/es/SubjectCS2015.html","Economia-http://www.shanghairanking.com/es/SubjectEcoBus2015.html"
-          ,"Science-http://www.shanghairanking.com/es/FieldSCI2015.html","Ingenieria-http://www.shanghairanking.com/es/FieldENG2015.html",
-          "Medicina-http://www.shanghairanking.com/es/FieldMED2015.html","Sociales-http://www.shanghairanking.com/es/FieldSOC2015.html"]
+URLArea =["Matematicas-http://www.shanghairanking.com/SubjectMathematics2015.html"
+        ,"Fisica-http://www.shanghairanking.com/SubjectPhysics2015.html","Quimica-http://www.shanghairanking.com/SubjectChemistry2015.html",
+          "Computacion-http://www.shanghairanking.com/SubjectCS2015.html","Economia-http://www.shanghairanking.com/SubjectEcoBus2015.html"
+          ,"Science-http://www.shanghairanking.com/FieldSCI2015.html","Ingenieria-http://www.shanghairanking.com/FieldENG2015.html",
+          "Medicina-http://www.shanghairanking.com/FieldMED2015.html","Sociales-http://www.shanghairanking.com/FieldSOC2015.html"]
 
-URLAnios=["http://www.shanghairanking.com/es/ARWU2015.html","http://www.shanghairanking.com/es/ARWU2014.html",
-         "http://www.shanghairanking.com/es/ARWU2013.html","http://www.shanghairanking.com/es/ARWU2012.html",
-         "http://www.shanghairanking.com/es/ARWU2011.html","http://www.shanghairanking.com/es/ARWU2010.html",
-         "http://www.shanghairanking.com/es/ARWU2009.html","http://www.shanghairanking.com/es/ARWU2008.html",
-         "http://www.shanghairanking.com/es/ARWU2007.html","http://www.shanghairanking.com/es/ARWU2006.html"]
+URLAnios=["http://www.shanghairanking.com/ARWU2015.html","http://www.shanghairanking.com/ARWU2014.html",
+         "http://www.shanghairanking.com/ARWU2013.html","http://www.shanghairanking.com/ARWU2012.html",
+         "http://www.shanghairanking.com/ARWU2011.html","http://www.shanghairanking.com/ARWU2010.html",
+         "http://www.shanghairanking.com/ARWU2009.html","http://www.shanghairanking.com/ARWU2008.html",
+         "http://www.shanghairanking.com/ARWU2007.html","http://www.shanghairanking.com/ARWU2006.html"]
 
 if(os.path.exists("../Procesamiento/procesamiento/Scraping")==False):
     os.mkdir("../Procesamiento/procesamiento/Scraping")

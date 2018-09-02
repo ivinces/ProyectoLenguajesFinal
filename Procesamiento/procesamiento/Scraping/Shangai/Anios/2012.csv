@@ -1,100 +1,100 @@
-1,Universidad de Harvard
-3,Instituto de Tecnolog\xc3\x83\xc2\xada de Massachusetts
-5,Universidad de Cambridge 
-7,Universidad de Princeton
-9,Universidad de Chicago
-11,Universidad de Yale
-13,Universidad de Cornell
-15,Universidad de California, San Diego
-17,Universidad Johns Hopkins
-19,Universidad de Wisconsin - Madison 
-21,Escuela Universitaria de Londres
-23,Instituto Federal Suizo de Tecnolog\xc3\x83\xc2\xada de Z\xc3\x83\xc2\xbarich
-25,Universidad de Illinois en Urbana-Champaign
-27,Universidad de Nueva York
-29,Universidad de Minnesota, Twin Cities
-31,Universidad de Washington en St. Louis
-33,Universidad de Colorado en Boulder 
-35,Universidad de Texas en Austin
-37,Universidad de Par\xc3\x83\xc2\xads Sur (Paris XI)
-39,Universidad de Columbia Brit\xc3\x83\xc2\xa1nica
-41,Universidad de Carolina del Norte en Chapel Hill
-43,Universidad Pierre y Marie Curie - Par\xc3\x83\xc2\xads VI
-45,Universidad de California, Irvine
-47,Universidad de California, Davis
-49,Universidad Estatal de Pensilvania - University Park
-51,Universidad Carnegie Mellon
-53,Universidad T\xc3\x83\xc2\xa9cnica de M\xc3\x83\xc2\xbanich
-55,Universidad de Utrecht
-57,Universidad de Melbourne
-59,Universidad de Z\xc3\x83\xc2\xbarich
-61,Rutgers, Universidad Estatal New Jersey - New Brunswick
-63,Universidad de McGill
-65,Universidad de Brown
-67,Universidad de Oslo
-69,Universidad de Ginebra
-71,Universidad de Boston 
-73,Escuela Normal Superior de Paris
-75,Universidad de Helsinki
-77,Universidad de Arizona
-79,Universidad Estatal de Arizona
-81,Universidad de Estocolmo
-83,Universidad de Osaka
-85,Universidad de Basilea
-87,Universidad de Nottingham
-89,Universidad de Gante
-91,Universidad Rice
-93,Universidad de Texas A&M
-95,Instituto Weizmann de Ciencias
-97,Universidad de Nagoya
-99,Universidad Occidental de la Reserva del Caso
-2,Universidad de Stanford
-4,Universidad de California-Berkeley
-6,Instituto de Tecnolog\xc3\x83\xc2\xada de California
-8,Universidad de Columbia
-10,Universidad de Oxford
-12,Universidad de California, Los \xc3\x83\xc2\x81ngeles
-14,Universidad de Pennsylvania
-16,Universidad de Washington
-18,Universidad de California, San Francisco
-20,Universidad de Tokio
-22,Universidad de M\xc3\x83\xc2\xadchigan-Ann Arbor
-24,Colegio Imperial de Ciencia, Tecnolog\xc3\x83\xc2\xada y Medicina 
-26,Universidad de Kioto
-28,Universidad de Toronto
-30,Universidad del Noroeste
-32,Universidad de Rockefeller
-34,Universidad de California, Santa B\xc3\x83\xc2\xa1rbara
-36,Universidad de Duke
-38,Universidad de Maryland, College Park
-40,Universidades en Manchester
-42,Instituto Karolinska
-44,Universidad de Copenhague
-46,Universidad del Sur de California
-48,Centro M\xc3\x83\xc2\xa9dico Suroccidental de la Universidad de Texas en Dallas
-50,Universidad de Vanderbilt
-52,Universidad de Edimburgo
-54,Universidad Hebrea de Jerusal\xc3\x83\xc2\xa9n
-56,Universidad de Purdue - Lafayette del Oeste
-58,Universidad de Pittsburgh-Campus de Pittsburgh
-60,Universidad de M\xc3\x83\xc2\xbanich
-62,Universidad de Heidelberg
-64,Universidad Nacional Australiana
-66,Universidad Estatal de Ohio - Columbus
-68,Colegio Universitario de King de Londres
-70,Universidad de Br\xc3\x83\xc2\xadstol
-72,Universidad de Florida
-74,Universidad de Leiden
-76,Universidad de Upsala
-78,Technion-Instituto Tecnol\xc3\x83\xc2\xb3gico de Israel
-80,Universidad Estatal de Mosc\xc3\x83\xc2\xba
-82,Universidad de Utah
-84,Universidad de Indiana Bloomington
-86,Universidad de Aarhus
-88,Universidad de Rochester
-90,Universidad de Queensland
-92,Universidad de McMaster
-94,Universidad de S\xc3\x83\xc2\xaddney
-96,Universidad Estatal de M\xc3\x83\xc2\xadchigan
-98,Universidad de Australia del Oeste
-100,Universidad de Friburgo
+1,Harvard University
+3,Massachusetts Institute of Technology (MIT)
+5,University of Cambridge
+7,Princeton University
+9,University of Chicago
+11,Yale University
+13,Cornell University
+15,University of California, San Diego
+17,The Johns Hopkins University
+19,University of Wisconsin - Madison
+21,University College London
+23,Swiss Federal Institute of Technology Zurich
+25,University of Illinois at Urbana-Champaign
+27,New York University
+29,University of Minnesota, Twin Cities
+31,Washington University in St. Louis
+33,University of Colorado at Boulder
+35,The University of Texas at Austin
+37,University of Paris Sud (Paris 11)
+39,University of British Columbia
+41,University of North Carolina at Chapel Hill
+43,Pierre and Marie  Curie University - Paris 6
+45,University of California, Irvine
+47,University of California, Davis
+49,Pennsylvania State University - University Park
+51,Carnegie Mellon University
+53,Technical University Munich
+55,Utrecht University
+57,University of Melbourne
+59,University of Zurich
+61,Rutgers, The State University of New Jersey - New Brunswick
+63,McGill University
+65,Brown University
+67,University of Oslo
+69,University of Geneva
+71,Boston University
+73,Ecole Normale Superieure - Paris
+75,University of Helsinki
+77,University of Arizona
+79,Arizona State University - Tempe
+81,Stockholm University
+83,Osaka University
+85,University of Basel
+87,University of Nottingham
+89,Ghent University
+91,Rice University
+93,Texas A&M University - College Station
+95,Weizmann Institute of Science
+97,Nagoya University
+99,Case Western Reserve University
+2,Stanford University
+4,University of California, Berkeley
+6,California Institute of Technology
+8,Columbia University
+10,University of Oxford
+12,University of California, Los Angeles
+14,University of Pennsylvania
+16,University of Washington
+18,University of California, San Francisco
+20,The University of Tokyo
+22,University of Michigan - Ann Arbor
+24,The Imperial College of Science, Technology and Medicine
+26,Kyoto University
+28,University of Toronto
+30,Northwestern University
+32,Rockefeller University
+34,University of California, Santa Barbara
+36,Duke University
+38,University of Maryland, College Park
+40,The University of Manchester
+42,Karolinska Institute
+44,University of Copenhagen
+46,University of Southern California
+48,The University of Texas Southwestern Medical Center at Dallas
+50,Vanderbilt University
+52,The University of Edinburgh
+54,The Hebrew University of Jerusalem
+56,Purdue University - West Lafayette
+58,University of Pittsburgh
+60,University of Munich
+62,University of Heidelberg
+64,The Australian National University
+66,The Ohio State University - Columbus
+68,s College London"
+70,University of Bristol
+72,University of Florida
+74,Leiden University
+76,Uppsala University
+78,Technion-Israel Institute of Technology
+80,Moscow State University
+82,University of Utah
+84,Indiana University Bloomington
+86,Aarhus University
+88,University of Rochester
+90,The University of Queensland
+92,McMaster University
+94,University of Sydney
+96,Michigan State University
+98,The University of Western Australia
+100,University of Freiburg

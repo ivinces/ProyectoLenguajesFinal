@@ -1,100 +1,100 @@
-1,Universidad de Stanford
-3,Universidad de California-Berkeley
-5,Universidad de Princeton
-7,Universidad de Texas en Austin
-9,Universidad de California, Los \xc3\x83\xc2\x81ngeles
-11,Instituto de Tecnolog\xc3\x83\xc2\xada de California
-13,Universidad de Illinois en Urbana-Champaign
-15,Universidad de M\xc3\x83\xc2\xadchigan-Ann Arbor
-17,Instituto Federal Suizo de Tecnolog\xc3\x83\xc2\xada de Z\xc3\x83\xc2\xbarich
-19,Universidad Estatal de Ohio - Columbus
-21,Universidad de Purdue - Lafayette del Oeste
-23,Universidad de Cambridge 
-25,Universidad de Tsinghua
-27,Universidad Rey Abdulaziz
-29,Universidad de California, Irvine
-31,Universidad de Columbia
-33,Universidad Tecnol\xc3\x83\xc2\xb3gica de Nanyang 
-35,Universidad del Noroeste
-37,Universidad de Nueva York
-39,Universidad de Ciencia y Tecnolog\xc3\x83\xc2\xada de Hong Kong
-41,Universidad de Minnesota, Twin Cities
-43,Universidad de Zhejiang
-45,Universidad de la Ciudad de Hong Kong
-47,Universidad de Notre Dame
-49,Universidad Jiaotong de Shangh\xc3\x83\xc2\xa1i
-51,Universidad de Duke
-53,Instituto de Tecnolog\xc3\x83\xc2\xada de Harbin
-55,Universidad Rey Abdullah de Ciencia y Tecnolog\xc3\x83\xc2\xada
-57,Universidad Estatal de M\xc3\x83\xc2\xadchigan
-59,Universidad de Pek\xc3\x83\xc2\xadn
-61,Universidad Rice
-63,Universidad Simon Fraser
-65,Universidad Polit\xc3\x83\xc2\xa9cnica de Hong Kong
-67,Universidad de California, Santa B\xc3\x83\xc2\xa1rbara
-69,Universidad de Copenhague
-71,Universidad de Ja\xc3\x83\xc2\xa9n
-73,Universidad de Washington
-75,Universidad de Xidian
-77,Universidad de Tecnolog\xc3\x83\xc2\xada de Dalian
-79,Universidad Johns Hopkins
-81,Universidad de McGill
-83,Universidad de Roma - La Sapienza
-85,Universidad Hebrea de Jerusal\xc3\x83\xc2\xa9n
-87,Universidad de Hong Kong
-89,Universidad de Alberta
-91,Universidad de Florida
-93,Universidad de Illinois en Chicago
-95,Universidad de Ciencias y Tecnolog\xc3\x83\xc2\xada de China
-97,Universidad de Waterloo
-99,Instituto Weizmann de Ciencias
-2,Instituto de Tecnolog\xc3\x83\xc2\xada de Massachusetts
-4,Universidad de Harvard
-6,Universidad Carnegie Mellon
-8,Universidad de Cornell
-10,Universidad del Sur de California
-12,Universidad de Toronto
-14,Universidad de California, San Diego
-16,Universidad de Maryland, College Park
-18,Technion-Instituto Tecnol\xc3\x83\xc2\xb3gico de Israel
-20,Universidad de Tel Aviv
-22,Instituto de Tecnolog\xc3\x83\xc2\xada de Georgia
-24,Universidad Nacional de Taiw\xc3\x83\xc2\xa1n
-26,Colegio Imperial de Ciencia, Tecnolog\xc3\x83\xc2\xada y Medicina 
-28,Universidad T\xc3\x83\xc2\xa9cnica de M\xc3\x83\xc2\xbanich
-30,Universidad de California, Davis
-32,Universidad Estatal de Arizona
-34,Universidad de Oxford
-36,Instituto Federal Suizo de Tecnolog\xc3\x83\xc2\xada de Lausana
-38,Universidad China de Hong Kong
-40,Universidad de Carolina del Norte en Chapel Hill
-42,Universidad de Granada
-44,Escuela Universitaria de Londres
-46,Universidad de Columbia Brit\xc3\x83\xc2\xa1nica
-48,Universidad Nacional de Singapur
-50,Universidad de Yale
-52,Universidad de Tecnolog\xc3\x83\xc2\xada de Eindhoven
-54,Universidad de Ciencia y Tecnolog\xc3\x83\xc2\xada de Huazhong
+1,Stanford University
+3,University of California, Berkeley
+5,Princeton University
+7,The University of Texas at Austin
+9,University of California, Los Angeles
+11,California Institute of Technology
+13,University of Illinois at Urbana-Champaign
+15,University of Michigan-Ann Arbor
+17,Swiss Federal Institute of Technology Zurich
+19,The Ohio State University - Columbus
+21,Purdue University - West Lafayette
+23,University of Cambridge
+25,Tsinghua University
+27,King Abdulaziz University
+29,University of California, Irvine
+31,Columbia University
+33,Nanyang Technological University
+35,Northwestern University
+37,New York University
+39,The Hong Kong University of Science and Technology
+41,University of Minnesota, Twin Cities
+43,Zhejiang University
+45,City University of Hong Kong
+47,University of Notre Dame
+49,Shanghai Jiao Tong University
+51,Duke University
+53,Harbin Institute of Technology
+55,King Abdullah University of Science and Technology
+57,Michigan State University
+59,Peking University
+61,Rice University
+63,Simon Fraser University
+65,The Hong Kong Polytechnic University
+67,University of California, Santa Barbara
+69,University of Copenhagen
+71,University of Jaen
+73,University of Washington
+75,Xidian University
+77,Dalian University of Technology
+79,Johns Hopkins University
+81,McGill University
+83,Sapienza University of Rome
+85,The Hebrew University of Jerusalem
+87,The University of Hong Kong
+89,University of Alberta
+91,University of Florida
+93,University of Illinois at Chicago
+95,University of Science and Technology of China
+97,University of Waterloo
+99,Weizmann Institute of Science
+2,Massachusetts Institute of Technology (MIT)
+4,Harvard University
+6,Carnegie Mellon University
+8,Cornell University
+10,University of Southern California
+12,University of Toronto
+14,University of California, San Diego
+16,University of Maryland, College Park
+18,Technion-Israel Institute of Technology
+20,Tel Aviv University
+22,Georgia Institute of Technology
+24,National Taiwan University
+26,The Imperial College of Science, Technology and Medicine
+28,Technical University Munich
+30,University of California, Davis
+32,Arizona State University
+34,University of Oxford
+36,Swiss Federal Institute of Technology Lausanne
+38,The Chinese University of Hong Kong
+40,University of North Carolina at Chapel Hill
+42,University of Granada
+44,University College London
+46,University of British Columbia
+48,National University of Singapore
+50,Yale University
+52,Eindhoven University of Technology
+54,Huazhong University of Science and Technology
 56,KU Leuven
-58,Universidad Nacional Chiao Tung
-60,Universidad Estatal de Pensilvania - University Park
-62,Rutgers, Universidad Estatal New Jersey - New Brunswick
-64,Universidad de Texas A&M
-66,Universidades en Manchester
-68,Universidad de Colorado en Boulder 
-70,Universidad de Delaware
-72,Universidad de Utah
-74,an"
-76,Universidad de Brown
-78,Universidad de Gante
-80,Instituto Avanzado de Ciencia y Tecnolog\xc3\x83\xc2\xada de Corea
-82,Instituto Tecnol\xc3\x83\xc2\xb3gico de Nueva Jersey 
-84,Universidad T\xc3\x83\xc2\xa9cnica de Dinamarca
-86,Universidad de Edimburgo
-88,Universidad de Nueva Gales del Sur 
-90,Universidad de Br\xc3\x83\xc2\xadstol
-92,Universidad de Houston
-94,Universidad de Pennsylvania
-96,Universidad de Southampton
-98,Universidad de Wisconsin - Madison 
-100,Universidad de Wuhan
+58,National Chiao Tung University
+60,Pennsylvania State University - University Park
+62,Rutgers, The State University of New Jersey - New Brunswick
+64,Texas A&M University
+66,The University of Manchester
+68,University of Colorado at Boulder
+70,University of Delaware
+72,University of Utah
+74,Xian Jiao Tong University
+76,Brown University
+78,Ghent University
+80,Korea Advanced Institute of Science and Technology
+82,New Jersey Institute of Technology
+84,Technical University of Denmark
+86,The University of Edinburgh
+88,The University of New South Wales
+90,University of Bristol
+92,University of Houston
+94,University of Pennsylvania
+96,University of Southampton
+98,University of Wisconsin - Madison
+100,Wuhan University

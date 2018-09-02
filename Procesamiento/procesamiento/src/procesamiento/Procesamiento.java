@@ -41,7 +41,7 @@ public class Procesamiento {
         recorrido(mundialWebometrics,"Webometrics/Mundial");
         recorrido(paises,"Webometrics/Paises");
         
-        // TODO code application logic here
+        Archivo.modificarContenido2("universidades.json");
     }
     
     public static void recorrido(String[] arreglo, String ruta) throws IOException, FileNotFoundException, JSONException{
@@ -50,10 +50,11 @@ public class Procesamiento {
             ArrayList lec=Archivo.muestraContenido(rutanueva);
             String nombre=archivo.split(".csv")[0];
             System.out.println(">>>>>>>>>>>>>>>>>>"+nombre+"<<<<<<<<<<<<<<<");
-            
-            ArrayList<Universidades> tags=Archivo.separartag(lec, nombre);
+            String ruta2=ruta.split("/")[1];
+            ArrayList<Universidades> tags=Archivo.separartag(lec, nombre,ruta2);
             Procesar p=new Procesar();
             p.procesarporposicion(tags,nombre);
+            
         }
     }
     

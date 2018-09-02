@@ -11,7 +11,7 @@
 21,University of Toronto
 23,University of North Carolina Chapel Hill
 25,University of Illinois Urbana Champaign
-27,Eidgen\xc3\xb6ssische Technische Hochschule ETH Z\xc3\xbcrich / Swiss Federal Institute of Technology Zurich
+27,Eidgenossische Technische Hochschule ETH Zurich / Swiss Federal Institute of Technology Zurich
 29,Northwestern University
 31,University of Maryland College Park
 33,Carnegie Mellon University
@@ -19,7 +19,7 @@
 37,University of California Davis
 39,Purdue University
 41,Boston University
-43,Tsinghua University / \xe6\xb8\x85\xe5\x8d\x8e\xe5\xa4\xa7\xe5\xad\xa6
+43,Tsinghua University / 
 45,University of Colorado Boulder
 47,Rutgers The State University of New Jersey
 49,University of California San Francisco
@@ -33,18 +33,18 @@
 65,University of Queensland
 67,University of New South Wales
 69,Indiana University Bloomington
-71,(2) Universidade de S\xc3\xa3o Paulo USP
+71,(2) Universidade de Sao Paulo USP
 73,University of Amsterdam / Universiteit van Amsterdam
 75,North Carolina State University
 77,University of Iowa
 79,University of Sydney
 81,Brown University
 83,s College London"
-85,Zhejiang University (National Che Kiang University) / \xe6\xb5\x99\xe6\xb1\x9f\xe5\xa4\xa7\xe5\xad\xa6
-87,Shanghai Jiao Tong University / \xe4\xb8\x8a\xe6\xb5\xb7\xe4\xba\xa4\xe9\x80\x9a\xe5\xa4\xa7\xe5\xad\xa6
-89,Universit\xc3\xa4t Z\xc3\xbcrich
+85,Zhejiang University (National Che Kiang University) / 
+87,Shanghai Jiao Tong University / 
+89,Universitat Zurich
 91,University of Groningen / Rijksuniversiteit Groningen
-93,Ruprecht Karls Universit\xc3\xa4t Heidelberg
+93,Ruprecht Karls Universitat Heidelberg
 95,Ghent University / Universiteit Gent
 97,Monash University
 99,University of Illinois Chicago
@@ -73,20 +73,20 @@
 46,Georgia Institute of Technology
 48,Washington University Saint Louis
 50,Arizona State University
-52,Peking University / \xe5\x8c\x97\xe4\xba\xac\xe5\xa4\xa7\xe5\xad\xa6
+52,Peking University / 
 54,University of Virginia
 56,McGill University
-58,University of Tokyo / \xe6\x9d\xb1\xe4\xba\xac\xe5\xa4\xa7\xe5\xad\xa6
+58,University of Tokyo / 
 60,University of Melbourne
 62,University of Utah
 64,University of Alberta
 66,University of Manchester
 68,Emory University
 70,Australian National University
-72,University of Copenhagen / K\xc3\xb8benhavns Universitet
-74,\xc3\x89cole Polytechnique F\xc3\xa9d\xc3\xa9rale de Lausanne
+72,University of Copenhagen / Kbenhavns Universitet
+74,Ecole Polytechnique Federale de Lausanne
 76,Catholic University of Leuven
-78,Ludwig Maximilians Universit\xc3\xa4t M\xc3\xbcnchen
+78,Ludwig Maximilians Universitat Munchen
 80,University of Helsinki / Helsingin yliopisto
 82,Virginia Polytechnic Institute and State University
 84,Tufts University
@@ -97,4 +97,4 @@
 94,National Taiwan University
 96,City University of New York
 98,University of Waterloo
-100,Technische Universit\xc3\xa4t M\xc3\xbcnchen
+100,Technische Universitat Munchen
