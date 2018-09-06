@@ -136,7 +136,7 @@
 <script>
 
 	$("#comparar").click(function(){
-		var _labels = ["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","Región","Computacion","Economia","Fisica","Ingenieria","Matematicas" ,"Medicina","Quimica","Science","Sociales"];
+		var _labels = ["2006","2007","2008","2009","2010","2011","2012","2013","2014","2015","Nacionales","Región","Computacion","Economia","Fisica","Ingenieria","Matematicas" ,"Medicina","Quimica","Science","Sociales"];
 		var _datasets = [];
 		$('.clase_check:checked').each(
 		    function() {
@@ -161,6 +161,7 @@
 								_datas_respuestas.push(myObj.entradas[i].p_2014);
 								_datas_respuestas.push(myObj.entradas[i].p_2015);
 								_datas_respuestas.push(myObj.entradas[i].p_pais);
+								_datas_respuestas.push(myObj.entradas[i].p_region);
 								_datas_respuestas.push(myObj.entradas[i].p_computacion);
 								_datas_respuestas.push(myObj.entradas[i].p_economia);
 								_datas_respuestas.push(myObj.entradas[i].p_fisica);
