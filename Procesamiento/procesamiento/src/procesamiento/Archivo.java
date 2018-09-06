@@ -87,6 +87,7 @@ public class Archivo {
                 Posiciones p=ht.get(linea);
                 obj.put("p_mundial", p.getMundial());
                 obj.put("p_pais", p.getPais());
+                obj.put("p_region", p.getRegion());
                 obj.put("p_2006", p.getAnio2006());
                 obj.put("p_2007", p.getAnio2007());
                 obj.put("p_2008", p.getAnio2008());
@@ -134,7 +135,6 @@ public class Archivo {
                 String[] cad=cadena.split(",");
                 int posicion=Integer.parseInt(cad[0]);
                 String unis=cad[1].split("/")[0].replace("\\n", "");
-                System.out.println(unis);
                 Universidades uni_posi=new Universidades(unis,posicion);
                 lista2.add(uni_posi);
                 
@@ -247,6 +247,17 @@ public class Archivo {
                         else{
                             Posiciones p=new Posiciones();
                             p.setPais(posicion);
+                            ht.put(unis, p);
+                        }
+
+                }
+                if(ruta.equals("Region")){
+                    if(ht.containsKey(unis)){
+                            ht.get(unis).setRegion(posicion);
+                        }
+                        else{
+                            Posiciones p=new Posiciones();
+                            p.setRegion(posicion);
                             ht.put(unis, p);
                         }
 

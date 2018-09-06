@@ -22,6 +22,7 @@ public class Posiciones {
     int anio2014;
     int anio2015;
     int pais;
+    int region;
     int area_computacion;
     int area_economia;
     int area_fisica;
@@ -32,6 +33,16 @@ public class Posiciones {
     int area_science;
     int area_sociales;
 
+    public int getRegion() {
+        return region;
+    }
+
+    public void setRegion(int region) {
+        this.region = region;
+    }
+
+    
+    
     public int getMundial() {
         return mundial;
     }
