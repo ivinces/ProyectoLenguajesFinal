@@ -27,19 +27,23 @@ public class Procesamiento {
         ,"Medicina.csv","Quimica.csv","Science.csv","Sociales.csv"};
         String mundialShangai[]={"Mundo.csv"};
         String mundialWebometrics[]={"World.csv"};
-        String paises[]={"África.csv","Alemania.csv","América del Norte.csv","Americas.csv"
-        ,"Arab_world.csv","Argentina.csv","Asia (incl ME).csv","Asia-Pacifico.csv","Australia.csv"
-        ,"Brasil.csv","Canadá.csv","Caribe.csv","Chile.csv","China.csv","Corea del Sur.csv"
-        ,"Ecuador.csv","EEUU.csv","Egipto.csv","Emiratos Árabes Unidos.csv","Estados Unidos de América.csv"
-        ,"Europa.csv","Francia.csv","Italia.csv","Japón.csv","Latinoamérica.csv","Medio Oriente.csv"
-        ,"México.csv","Nueva Zelanda.csv","Oceania.csv","Rusia.csv","Sudasia.csv"
-        ,"Sudeste Asiático.csv","Tailandia.csv"};
+        String paises[]={"Alemania.csv","Argentina.csv","Australia.csv","Brasil.csv"
+        ,"Canadá.csv","Chile.csv","China.csv","Corea del Sur.csv"
+        ,"Ecuador.csv","EEUU.csv","Egipto.csv","Emiratos Árabes Unidos.csv"
+        ,"Estados Unidos de América.csv","Francia.csv","Italia.csv","Japón.csv"
+        ,"México.csv","Nueva Zelanda.csv","Rusia.csv","Tailandia.csv"};
+        String region[]={"África.csv","América del Norte.csv","Americas.csv"
+        ,"Arab_world.csv","Asia (incl ME).csv","Asia-Pacifico.csv"
+        ,"Caribe.csv","Europa.csv","Latinoamérica.csv","Medio Oriente.csv"
+        ,"Oceania.csv","Sudasia.csv"
+        ,"Sudeste Asiático.csv"};
         
         recorrido(anios,"Shangai/Anios");
         recorrido(area,"Shangai/Area");
         recorrido(mundialShangai,"Shangai/Mundial");
         recorrido(mundialWebometrics,"Webometrics/Mundial");
         recorrido(paises,"Webometrics/Paises");
+        recorrido(region,"Webometrics/Region");
         
         Archivo.modificarContenido2("universidades.json");
     }
@@ -49,7 +53,6 @@ public class Procesamiento {
             String rutanueva="Scraping/"+ruta+"/"+archivo;
             ArrayList lec=Archivo.muestraContenido(rutanueva);
             String nombre=archivo.split(".csv")[0];
-            System.out.println(">>>>>>>>>>>>>>>>>>"+nombre+"<<<<<<<<<<<<<<<");
             String ruta2=ruta.split("/")[1];
             ArrayList<Universidades> tags=Archivo.separartag(lec, nombre,ruta2);
             Procesar p=new Procesar();
